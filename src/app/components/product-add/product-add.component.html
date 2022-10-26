@@ -1,0 +1,32 @@
+<div class="content">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="title">Ürün Ekle</h5>
+            </div>
+            <div class="card-body">
+                <form [formGroup]="productAddForm">
+                    <label for="productName" class="mb-1">Ürün adı</label>
+                    <div class="form-group">
+                        <input type="text" id="productName" formControlName="productName" class="form-control mb-2" placeholder="Ürün adı"/>
+                    </div>
+                    <label for="categoryId" class="mb-1">Kategori</label>
+                    <div class="form-group">
+                        <input type="number" id="categoryId" formControlName="categoryId" class="form-control mb-2" placeholder="Kategori"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="unitsInStock" class="mb-1">Stok adedi</label>
+                        <input type="number" id="unitsInStock" formControlName="unitsInStock" class="form-control mb-2" placeholder="Stok adedi"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="unitPrice" class="mb-1">Birim fiyat</label>
+                        <input type="number" id="unitPrice" formControlName="unitPrice" class="form-control mb-2" placeholder="Birim fiyat"/>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-fill btn-primary" (click)="add()">Ekle</button>
+            </div>
+        </div>
+    </div>
+</div>
